@@ -4,16 +4,19 @@ describe('About Objects', function() {
     var meglomaniac;
 
     beforeEach(function() {
-      meglomaniac = { mastermind: 'Joker', henchwoman: 'Harley' };
+      meglomaniac = {
+        mastermind: 'Joker',
+        henchwoman: 'Harley'
+      };
     });
 
     it('should confirm objects are collections of properties', function() {
-      expect(meglomaniac.mastermind).toBe(FILL_ME_IN);
+      expect(meglomaniac.mastermind).toBe('Joker');
     });
 
     it('should confirm that properties are case sensitive', function() {
-      expect(meglomaniac.henchwoman).toBe(FILL_ME_IN);
-      expect(meglomaniac.henchWoman).toBe(FILL_ME_IN);
+      expect(meglomaniac.henchwoman).toBe('Harley');
+      expect(meglomaniac.henchWoman).toBe(undefined);
     });
   });
 
