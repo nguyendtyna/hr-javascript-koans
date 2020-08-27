@@ -48,8 +48,12 @@ describe('About Higher Order Functions', function() {
 
     _(numbers).forEach(isEven);
 
-    expect(msg).toEqual(FILL_ME_IN);
-    expect(numbers).toEqual(FILL_ME_IN);
+    // (item = 1) msg = 'false'
+    // (item = 2) msg = 'falsetrue'
+    // (item = 3) msg = 'falsetruefalse'
+
+    expect(msg).toEqual('falsetruefalse');
+    expect(numbers).toEqual([1, 2, 3]);
   });
 
   it('should use "all" to test whether all items pass condition', function() {
