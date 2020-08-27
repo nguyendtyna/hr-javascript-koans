@@ -5,11 +5,31 @@ describe('About Applying What We Have Learnt', function() {
 
   beforeEach(function () {
     products = [
-      { name: 'Sonoma', ingredients: ['artichoke', 'sundried tomatoes', 'mushrooms'], containsNuts: false },
-      { name: 'Pizza Primavera', ingredients: ['roma', 'sundried tomatoes', 'goats cheese', 'rosemary'], containsNuts: false },
-      { name: 'South Of The Border', ingredients: ['black beans', 'jalapenos', 'mushrooms'], containsNuts: false },
-      { name: 'Blue Moon', ingredients: ['blue cheese', 'garlic', 'walnuts'], containsNuts: true },
-      { name: 'Taste Of Athens', ingredients: ['spinach', 'kalamata olives', 'sesame seeds'], containsNuts: true }
+      {
+        name: 'Sonoma',
+        ingredients: ['artichoke', 'sundried tomatoes', 'mushrooms'],
+        containsNuts: false
+      },
+      {
+        name: 'Pizza Primavera',
+        ingredients: ['roma', 'sundried tomatoes', 'goats cheese', 'rosemary'],
+        containsNuts: false
+      },
+      {
+        name: 'South Of The Border',
+        ingredients: ['black beans', 'jalapenos', 'mushrooms'],
+        containsNuts: false
+      },
+      {
+        name: 'Blue Moon',
+        ingredients: ['blue cheese', 'garlic', 'walnuts'],
+        containsNuts: true
+      },
+      {
+        name: 'Taste Of Athens',
+        ingredients: ['spinach', 'kalamata olives', 'sesame seeds'],
+        containsNuts: true
+      }
     ];
   });
 
@@ -33,7 +53,7 @@ describe('About Applying What We Have Learnt', function() {
       }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1);
   });
 
   it('given I\'m allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)', function () {
